@@ -1,0 +1,71 @@
+.home__button {
+    width: 100px;
+    height: 100%;
+    margin-left: 0;
+    padding: 10px 20px;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    background-color: var(--light-blue);
+    border-radius: 25px;
+    color: var(--text-white-first);
+    font-size: 10px;
+    line-height: 7px;
+    letter-spacing: 2.55px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.home__icon {
+    color: var(--text-white-first);
+}
+
+.contrast {
+    background: #72EFDB;
+    color: #0B1741;
+}
+
+.home__button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/*Responsividade header*/
+
+@media (min-width:280px) {
+    .home__button{
+        height: 30px;
+        font: normal normal bold 9px/7px Rubik;      
+    }
+
+    .home__icon {
+        height: 8px;
+    }
+  }
+  
+  @media (min-width:768px) {
+    .home__button{
+        font: normal normal bold 14px/10px Rubik;
+    }
+
+    .home__icon {
+        height: 12px;        
+    }
+
+  }
+  
+  @media (min-width:1112px) {
+    .home__button{
+        width: 170px;
+        font: normal normal bold 17px/13px Rubik;
+        column-gap: 10px;
+        padding: 25px 35px;
+    }
+
+    .home__icon {
+        height: 16px;     
+    }
+  }

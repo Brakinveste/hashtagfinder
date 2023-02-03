@@ -1,0 +1,385 @@
+
+
+
+
+li {
+    display: flex;
+    justify-content: center;
+}
+
+.cards__list {
+    padding-top: 60px;
+    padding-bottom: 188px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-between;
+  
+}
+
+.cards {
+    /* margin: 20px; */
+    width: 369px;
+    height: 461px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF24;
+    box-shadow: 0px 5px 10px #5538EE14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px 35px 40px;
+}
+
+.card__pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+}
+
+
+
+.card__name {
+    font-weight: bold;
+    width: 100%;
+    color: #72EFDB;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.card__text {
+    width: 100%;
+    color: #D9D9D9;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 22px;
+}
+
+.icons__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons__git {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.icons__mail {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.icons__linkedin {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:389px) {
+    .cards {
+        width: 300px;
+    }
+}
+
+/*  responsividade  
+
+@media (min-width:768px)  {
+
+
+
+
+  .text__title {
+      width: auto;
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 33px;
+      margin: 80px 0 30px 0; 
+  }
+
+  .text__about {
+      color: #ffffff;
+      width: auto;
+      font-size: 18px;
+      
+  }    
+
+  .img__decor {
+      width: 100%;
+      margin-bottom: 80px;
+  }
+
+  .second__section {
+      width: 100%;
+      background-color: #0A1744;
+  }
+
+  .cards__container {
+      width: 92%;
+  }
+
+  .cards__tittle {
+      width: 92%;
+      font-weight: bold;
+      font-size: 27px;
+      color: #ffffff;
+  }
+
+  .cards__list {
+      padding-top: 30px;
+      padding-bottom: 120px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-items: center;
+      justify-content: space-between;
+  }
+
+  .cards {
+      width: 100%;
+      margin-top: 46px;
+      border-radius: 10px;
+      border: 1px solid #FFFFFF24;
+      box-shadow: 0px 5px 10px #5538EE14;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card__pic01 {
+      width: 182px;
+      height: 182px;
+  }
+
+  .card__pic02 {
+      width: 182px;
+      height: 182px;
+  }
+
+  .card__pic03 {
+      width: 182px;
+      height: 182px;
+  }
+
+  .card__pic04 {
+      width: 182px;
+      height: 182px;
+  }
+
+  .card__text {
+      max-width: 300px;
+      color: #D9D9D9;
+      font-size: 19px;
+      line-height: 25px;
+      text-align: center;
+      padding-bottom: 24px;
+  }
+
+  .icons__list {
+      max-width: 300px;
+      display: flex;
+      justify-content: space-evenly;
+  }
+}
+
+@media (min-width:899px) {
+  .text__box {
+      width: 100%;
+      margin: 45px 0 56px 0;
+  }
+
+  .text__title {
+      width: auto;
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 33px;
+      margin-bottom: 31px;
+      }
+
+  .text__about {
+      color: #ffffff;
+      width: auto;
+      font-size: 20px;
+      line-height: 26px;
+  } 
+
+  .fist__section {
+      width: 92%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  
+
+  .img__decor__frame {
+      width: 100%;
+  }
+
+  .img__decor {
+      width: 100%;
+      height: auto;
+      margin-bottom: 50px;
+      margin-top: 54px;
+  }
+
+  .cards__container {
+      margin-left: auto;
+      margin-right: auto;
+      width: 92%;
+      height: auto;
+  }
+
+  .cards__tittle {
+      font-weight: bold;
+      font-size: 33px;
+      color: #ffffff;
+  }
+
+  .cards__list {
+      padding-top: 26px;
+      padding-bottom: 90px;
+      
+    
+  }
+
+  .cards {
+      width: 369px;
+      height: 461px;
+      margin-top: 46px;
+  }
+}
+
+@media (min-width:1112px) {
+  
+  .text__title {
+      width: auto;
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 62px;
+      margin-bottom: 31px;
+      }
+
+  .text__about {
+      color: #ffffff;
+      width: auto;
+      font-size: 20px;
+      line-height: 26px;
+      
+  } 
+
+  .fist__section {
+      width: 92%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  
+
+  
+  .cards__list {
+      padding-top: 78px;
+      padding-bottom: 90px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-items: center;
+      justify-content: space-between;
+  }
+
+  .cards {
+      width: 300px;
+      height: 461px;
+      margin-top: 46px;
+  }
+}    
+
+@media (min-width:1500px) {
+  .fist__section {
+      padding-top: 120px;
+      width: 92%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+      flex-direction: row;
+  }
+  
+  .text__box {
+      margin: 0 0 274px 0;
+  }
+  
+  .text__title {
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 82px;
+     
+  }
+  
+  .text__about {
+      color: #ffffff;
+      width: 763px;
+      font-size: 21px;
+      line-height: 38px;
+  }
+  
+  .img__decor__frame {
+      padding-top: 70px;
+      width: 60vh;
+  }
+  
+  .img__decor {
+      width: auto;
+      height: auto;
+  }
+}
+
+@media (min-width:1920px) {
+  .cards__list {
+      padding-top: 78px;
+      padding-bottom: 90px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-items: center;
+      justify-content: space-evenly;
+  }
+
+  .cards {
+      width: 400px;
+      margin-top: 46px;
+      border-radius: 10px;
+      border: 1px solid #FFFFFF24;
+      box-shadow: 0px 5px 10px #5538EE14;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+}
+*/

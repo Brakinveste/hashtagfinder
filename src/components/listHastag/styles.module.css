@@ -1,0 +1,78 @@
+.main{
+    width:100%;
+    display: none;
+    animation: slide_left .4s linear;
+}
+
+.main:first-child{
+    margin-top: 15px;
+    border-bottom: 1px solid #41558E;
+}
+.main + .main{ 
+ /*colocará um borda se o MAIN estiver seguido de MAIN*/
+    border-bottom: 1px solid #41558E;
+}
+@keyframes slide_left {
+    from{
+        transform: translate(-500px, 0);
+    }
+}
+.main:nth-last-child(2){
+    border: none;
+    margin-bottom: 24px;
+}
+.main__container{
+    /*TODO */
+    display: flex;
+    justify-content: space-between;
+    margin: 20.56px 0 11.44px 0;
+    padding-left: 10.2px;
+    font-size: 0.875em;
+}
+
+.main__container div span{
+    color: var( --text-cyan);
+    font-family: var(--typo-rubik);
+}
+.main__container div span:last-child{
+    margin-left: calc(55px - 10.2px - 0px) ;
+}
+.container__hashtag{
+    color: var(--text-white-first);
+    text-overflow: ellipsis;
+    max-width:300px ;
+    overflow-y: hidden;
+    font-family: var(--typo-mont);
+}
+
+
+@media (min-width:1112px) {
+    .main__container{
+        padding-left:34.01px ;
+        margin: 39.28px 0 21.72px 0;
+    }
+    .main__container div span{
+        font-size: 1.5em;
+    }
+    .main:nth-last-child(2){
+        margin-bottom: 59.72px;
+    }
+    .main__container div span:last-child{
+        margin-left: calc(159px - 10.2px - 20px) ;
+        margin-right: 80.2px;
+    }
+    .container__hashtag{
+        font-size: 1.5em;
+    }
+}
+
+
+/* pelo data-item nos componentes eu consigo setar se ele estiver visivel ou não*/
+/*caso visive coloca um display block*/
+div[data-item="true"]{
+    display: block;
+}
+/*caso o elemento não esteja visivel ele coloca o display none está como padráo */
+div[data-item="false"]{
+    display: initial;
+}

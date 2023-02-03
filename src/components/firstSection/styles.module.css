@@ -1,0 +1,30 @@
+
+.first__class {
+  width: 100%;
+  min-height: 740px;
+  padding: 50px 30px 0 30px;
+  background-image: url('../../../public/images/backgrounds/mobile-hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .first__class {
+    background-image: url('../../../public/images/backgrounds/hero-bg.jpg');
+  }
+}
+
+@media (min-width:1112px) {
+  .first__class {
+    min-height: 100vh;
+    padding: 80px 140px 40px;
+  }
+}
+
+@media (min-width:1920px) {
+  .first__class {
+    min-height: auto;
+    padding: 140px 140px 20px;
+  }
+}

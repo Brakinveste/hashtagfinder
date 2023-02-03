@@ -1,0 +1,93 @@
+/*----------------------------------------------------*\
+  # R E S E T
+\*----------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  transition: 0.5s;
+}
+
+
+
+/* Está definindo as cores e tipografia usado no site */
+
+@font-face {
+  /* FONTE RUBIK. WEIGHT: 400, 500, 700  */
+  font-family:'Rubik' ;
+  src: url("./assets/fonts/Rubik/Rubik-VariableFont_wght.ttf");
+}
+
+@font-face {
+  /* FONTE MONTSERRAT WEIGHT: 400*/
+  font-family: 'Montserrat';
+  src: url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+:root{
+
+  --dark-blue:#0A1744;
+  --dark-blue-opaque:#0B1A49;
+  --dark-transparent:#0a17448f;
+  --cyan:#72EFDB;
+  --light-blue:rgb(30, 62, 123);
+  --light-blue-opaque:#1e3e7b;
+
+  --text-white-first:#ffffff; 
+  --text-white-opaque:rgba(255, 255, 255, 0.24); 
+  --text-white-second:#FCFCFC;
+
+  --text-grey:#D9D9D9;
+  --text-cyan:#72EFDB;
+  --text-darkBlue:#0B1741;
+  
+  --linear-gradiente:transparent linear-gradient(180deg, #0A174400 0%, var(--darkBlue)  100%) 0% 0% no-repeat padding-box;
+
+ 
+  --typo-rubik:'Rubik' ;
+  --typo-mont:'Montserrat';
+
+  font-family: 'Rubik';
+  
+}
+
+#end__list__tweets {
+  border: solid red;
+  width: 100%;
+}
+
+

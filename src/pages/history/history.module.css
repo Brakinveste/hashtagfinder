@@ -1,0 +1,105 @@
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+/**********************************/
+.container{
+    width: 100%;
+    padding: 0 9px 0 10px;
+ 
+}
+.container__title{
+    font-size:2.0625em;
+    color: var(--text-cyan);
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(calc(117px ) );
+}
+.container__table{
+    width: 100%;
+    border-radius: 14px;/*TODO se tem realmente algum alteração*/
+    margin-top: calc(80px + 33px + 49px);
+}
+/**********************************/
+.container__table__header{
+    background: #04246c;
+    width: 100%;
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 16px 11px 19px;
+    color: var(--text-cyan);
+    font-weight: bold;
+    font-size: 1.0625em;
+    font-family: var(--typo-rubik);
+    border-radius: 14px 14px 0 0;
+    position: relative;
+    z-index: 1;
+}
+.container__table__header div span:last-child{
+    margin-left:55px;
+}
+/**********************************/
+
+.container__list{
+    width: 100%;
+   /*TODO max-*/ max-height: 758px;
+    background: #18326B;
+    margin-bottom: 85px; 
+    border-radius:0 0 14px 14px;
+    /*TODO elemento tem que ter + 15*/margin-top: -15px;
+    overflow: auto;
+
+    scroll-behavior: smooth;
+    font-size: 1.5em;
+    padding:  0 6px 0 6.8px;
+}
+.container__list ul p{
+    margin: 32px 0;
+    text-align: center;
+    color:var(--text-cyan);
+    font-size: .8em;
+}
+
+.container__list ul li{
+    color: var(--text-cyan);
+    text-align: center;
+    font-size: .8em;
+}
+
+/**********************************/
+@media (min-width:1112px) {
+    .container{
+        padding: 0 183px 0 184px;
+    }
+    .container__title{
+        text-align: left;
+        margin-bottom:40px ;
+        position: relative;
+        transform: translateY(calc(117px + 33px) );
+    }
+    .container__table{
+        margin-top: calc(117px + 33px + 49px);
+        
+    }
+    .container__table__header{
+        height: 106px;
+        border-radius: 14px;
+        padding: 56px 125.2px 22px 62.8px;
+        font-size: 1.5em;
+    }
+    .container__table__header div span:last-child{
+        margin-left:159px;
+    }   
+    .container__list{
+        padding: 0 22.91px 0 23.8px;
+    }
+    .container__list ul li{
+        font-size: 1.5em;
+
+    }
+    .container__list ul p{
+        font-size: 1.5em;
+
+    }
+}
