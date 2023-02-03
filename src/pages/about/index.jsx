@@ -32,7 +32,7 @@ export const About =  () => {
       {
         method: "GET",
         headers: {
-          Authorization: 'Bearer keyz8BAZKCTGY5dB1',
+          Authorization: 'Bearer keymkBEBt2FCf4w3w',
         },
       }
     )
