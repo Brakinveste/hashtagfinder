@@ -3,36 +3,47 @@ import { Helmet } from 'react-helmet'
 import styles from './about.module.css'
 
 import ilustration from '/public/images/icons/about-ilustration.svg'
-import email from '/public/images/icons/icon-envelope.svg'
-import linkedin from '/public/images/icons/icon-awesome-linkedin.svg'
-import { initialStateMembers, listMembers} from '../../services'
+//import email from '/public/images/icons/icon-envelope.svg'
+//import linkedin from '/public/images/icons/icon-awesome-linkedin.svg'
+import { initialStateMembers, listMembers, timeEquipe} from '../../services'
 import { useEffect } from 'react'
 import { CardMember } from '../../components/cardMember'
 
 
+
 export const About =  () => {
+  
+  
   const [texto, setTexto] = useState("");
   const [members, setMembers] = useState(initialStateMembers);
   
   async function getUsers(){
+    //console.log(await timeEquipe)
+    
     const time = await listMembers()
-    const equipe = time.map((member, index)=> {
-      return <li key={member.Nome}><CardMember member={member} index={index}/></li>
-    })
+    //console.log(time)
+    
+    
+    
+    //setMembers(await time)
 
-    setMembers(equipe)
+    console.log(await time)
+    return time
   }
   
+  //listMembers().then(data=>setMembers(data)).then(console.log(members))
 
   useEffect(() => {
-    listMembers().then(data=>setMembers(data))
+    //getUsers().then(console.log(members))
+    getUsers().then(data => setMembers(data)).then(console.log(members))
+
     fetch(
       "https://api.airtable.com/v0/app6wQWfM6eJngkD4/Projeto?filterByFormula=" +
         encodeURI(`({Squad} = '08-22')`),
       {
         method: "GET",
         headers: {
-          Authorization: 'Bearer keymkBEBt2FCf4w3w',
+          Authorization: 'Bearer keykXHtsEPprqdSBF',
         },
       }
     )
@@ -40,7 +51,9 @@ export const About =  () => {
       .then((response) => {
         setTexto(response.records[0].fields.Sobre);
       })
+      
       .catch((erro) => console.log(erro));
+      
       
     }, []);
 
@@ -79,8 +92,13 @@ export const About =  () => {
           <h1 className={styles.cards__tittle} > Quem somos </h1>  
 
             <ul className={styles.cards__list}> 
-            {members}
-              
+
+              {members.map(item => <CardMember member = {item} /> )}
+
+               {/*  { members.map(item => {
+                  return <CardMember member = {item} />
+                }) } */} 
+                       
               
             </ul> 
           

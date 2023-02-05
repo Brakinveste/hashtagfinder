@@ -1,3 +1,5 @@
+import { render } from "react-dom"
+
 import styles from './styles.module.css'
 import git from '/public/images/icons/icon-github.svg'
 import email from '/public/images/icons/icon-envelope.svg'
